@@ -1,0 +1,11 @@
+*__pycache__/
+*.egg-info/
+segment_anything/segment_anything/modeling
+*.pth
+*.pt
+*.pyc
+*.pyd
+*.so
+*.dll
+*.pdf
+*.svg

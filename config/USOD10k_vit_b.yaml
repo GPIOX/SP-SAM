@@ -1,0 +1,21 @@
+#=================USOD-10k======================================
+Net: vit_b
+Test:
+  batch_size: 1
+  ckpt: best/USOD-10k/20250302-230559/best_lora_56.pth 
+  decoder: best/USOD-10k/20250302-230559/best_other_56.pth        
+  test_image_dir: data/USOD-10k/test/Image/
+  test_lbl_dir: data/USOD-10k/test/Mask/
+  test_size: 512
+  testset_name: USOD-10k
+
+Train:
+  batch_size: 4
+  epoch_num: 200
+  net: USOD-10k
+  optimizer_lr: 0.0001
+  tra_image_dir: data/USOD-10k/train/Image/
+  tra_lbl_dir: data/USOD-10k/train/Mask/
+  train_size: 512
+
+exp_name: Pytorch SP-SAM-B USOD-10k

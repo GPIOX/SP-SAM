@@ -1,0 +1,1 @@
+python train.py --config_path config/UFO120_vit_h.yaml

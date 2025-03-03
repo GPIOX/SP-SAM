@@ -1,0 +1,22 @@
+#=================RMAS========================================
+Net: vit_b
+Test:
+  batch_size: 1
+  ckpt: best/RMAS/3_adapter_74.9/best_lora.pth   
+  decoder: best/RMAS/3_adapter_74.9/best_other.pth
+  test_image_dir: data/RMAS/test/img/
+  test_lbl_dir: data/RMAS/test/label/
+  test_size: 512
+  testset_name: RMAS
+
+Train:
+  batch_size: 8
+  epoch_num: 200
+  net: RMAS
+  optimizer_lr: 0.0001
+  tra_image_dir: data/RMAS/train/img/
+  tra_lbl_dir: data/RMAS/train/label/
+  train_size: 512
+
+
+exp_name: Pytorch SP-SAM-B RMAS

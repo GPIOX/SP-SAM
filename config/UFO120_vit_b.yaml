@@ -1,0 +1,21 @@
+#=================UFO-120======================================
+Net: vit_b
+Test:
+  batch_size: 1
+  ckpt: best/UFO-120/best_lora_1.pth 
+  decoder: best/UFO-120/best_other_1.pth        
+  test_image_dir: data/UFO-120/test/Image/
+  test_lbl_dir: data/UFO-120/test/Mask/
+  test_size: 512
+  testset_name: UFO-120
+
+Train:
+  batch_size: 8
+  epoch_num: 200
+  net: UFO-120
+  optimizer_lr: 0.0001
+  tra_image_dir: data/UFO-120/train/Image/
+  tra_lbl_dir: data/UFO-120/train/Mask/
+  train_size: 512
+
+exp_name: Pytorch SP-SAM-B UFO-120 

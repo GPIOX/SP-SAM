@@ -1,0 +1,1 @@
+python train.py --config_path config/RMAS_vit_l.yaml

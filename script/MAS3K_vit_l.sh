@@ -1,0 +1,1 @@
+python train.py --config_path config/MAS3K_vit_l.yaml

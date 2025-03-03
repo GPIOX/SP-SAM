@@ -1,0 +1,22 @@
+#=================MAS3K=======================================
+Net: vit_l
+Test:
+  batch_size: 1
+  ckpt: best/MAS3K/best_lora_1.pth 
+  decoder: best/MAS3K/best_other_1.pth        
+  test_image_dir: data/MAS3K/test/Image/
+  test_lbl_dir: data/MAS3K/test/Mask/
+  test_size: 512
+  testset_name: MAS3K
+
+Train:
+  batch_size: 4
+  epoch_num: 200
+  net: MAS3K
+  optimizer_lr: 0.0001
+  tra_image_dir: data/MAS3K/train/Image/
+  tra_lbl_dir: data/MAS3K/train/Mask/
+  train_size: 512
+
+
+exp_name: Pytorch SP-SAM-L MAS3K

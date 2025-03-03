@@ -1,0 +1,23 @@
+#=================RUWI=======================================
+Net: vit_b
+Test:
+  batch_size: 1
+  ckpt: best/RUWI/best_lora_1.pth 
+  decoder: best/RUWI/best_other_1.pth        
+  test_image_dir: data/RUWI/NAUTEC_UWI_Real_dataset/test/Image/
+  test_lbl_dir: data/RUWI/NAUTEC_UWI_Real_dataset/test/Mask/
+  test_size: 512
+  testset_name: RUWI
+
+Train:
+  batch_size: 4
+  epoch_num: 200
+  net: RUWI
+  optimizer_lr: 0.0001
+  tra_image_dir: data/RUWI/NAUTEC_UWI_Real_dataset/train/Image/
+  tra_lbl_dir: data/RUWI/NAUTEC_UWI_Real_dataset/train/Mask/
+  train_size: 512
+
+
+
+exp_name: Pytorch SP-SAM-B RUWI
